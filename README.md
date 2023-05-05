@@ -1,10 +1,10 @@
-# create-svelte
+# Individual Learning Plan Website
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A portfolio-esque website that highlights the classes I took to get to where I am today. 
 
-## Creating a project
+## Created with SvelteKit
 
-If you're seeing this, you've probably already done this step. Congrats!
+This webiste is my first serious attempt using Svelte & SvelteKit
 
 ```bash
 # create a new project in the current directory
