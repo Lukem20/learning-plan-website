@@ -153,10 +153,9 @@
     section {
         display: flex;
         flex-direction: column;
-        width: 700px;
+        width: 750px;
         padding: 2rem;
     }
-
     .flex-wrapper {
         display: flex;
         align-items: baseline;
@@ -165,9 +164,17 @@
     .experience .flex-wrapper {
         justify-content: space-between;
     }
-
     button {
         display: block;
         margin-top: 1rem;
+    }
+    h2 {
+        font-size: 2em;
+        font-weight: 200;
+        margin: 0;
+    }
+    h3 {
+        font-size: 1.5em;
+        margin: 0;
     }
 </style>

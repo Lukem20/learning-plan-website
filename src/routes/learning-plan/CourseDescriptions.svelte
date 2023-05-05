@@ -1,3 +1,21 @@
+<script>
+    import { onMount } from "svelte";
+    import gsap from "gsap/dist/gsap";
+
+    const tl = gsap.timeline({ defaults: { duration: 1 } });
+    gsap.registerPlugin('ScrollTrigger');
+
+    onMount(() => {
+        tl.from('.course-title', {
+            scrollTrigger: '.course-title',
+            x: 400,
+            rotation: 360,
+            duration: 2,
+        })
+    })
+</script>
+
+
 <h2>Course Descriptions</h2>
 <div class="course-list">
     <div class="course">

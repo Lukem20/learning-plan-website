@@ -3,17 +3,24 @@
   import gsap from "gsap/dist/gsap";
   import Nav from '../components/Nav.svelte';
 
-  const t1 = gsap.timeline({ defaults: { duration: 1 } });
+  const tl = gsap.timeline({ defaults: { duration: 1 } });
 
   onMount(() => {
-    t1.fromTo('h1', { opacity: 0 }, { opacity: 1 });
-    gsap.from('h1', {x: 200, duration: 1})
-    t1.from('h3', { opacity: 0, duration: 1})
+    tl.fromTo('h1', 
+      { opacity: 0 },
+      { opacity: 1 });
+    gsap.from('h1', { x: 200 })
+    tl.from('h3', { 
+      opacity: 0, duration: .7 
+    })
+    tl.from('#outro', { 
+      opacity: 0, y: -15, duration: .7 
+    })
   });
 
 </script>
 
-<!-- Add conditional statement here that only loads the timeline prop if it's the first pageload.-->
+<!-- Add conditional statement here that only loads the timeline prop if it's the first pageload. -->
 <Nav />
 <main>
   <h2 id="intro">Hello, my name is</h2>
@@ -22,7 +29,9 @@
 <section>
   <h3>Welcome to my learning plan website!</h3>
   <p id="outro">
-    Explore some of my academic background and the classes I have taken. This is very much a rough draft. I wanted to get a quick proof-of-concept project setup so I can take the time to design a 3D experience I am pleased with. 
+    Explore some of my past class work, academic background, and a brief overview of my work history. 
+    This website was made with SvelteKit, Three.js, and Green Sock animation platform. My goal with this 
+    website was to learn more about the fundamentals of Svelte and get started with an animation library.
   </p>
 </section>
 
@@ -53,4 +62,5 @@
     display: flex;
     flex-direction: column;
   }
+
 </style>
