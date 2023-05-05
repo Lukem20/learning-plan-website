@@ -18,19 +18,28 @@
 
 <style>
     ul {
-        padding: 0 1.5rem;
+        padding-left: 20px;
     }
-    .major-outcomes {
-        max-width: 43%;
-        padding: 1.25rem
+    h3 {
+        margin-top: 3rem;
     }
-    .major-outcomes h3 {
-        color:whitesmoke;
-    }
-    .major-outcomes p {
-        color: rgb(245, 255, 245);
-    }
-    .major-outcomes ul {
-        color: rgb(245, 255, 245);
+    /* Tablet screen size and larger */
+    @media screen and (min-width: 50em) {
+        ul {
+            padding-left: 30px;
+        }
+        .major-outcomes {
+            max-width: 42.5%;
+            padding: 1.25rem
+        }
+        .major-outcomes h3 {
+            color:whitesmoke;
+        }
+        .major-outcomes p {
+            color: rgb(245, 255, 245);
+        }
+        .major-outcomes ul {
+            color: rgb(245, 255, 245);
+        }
     }
 </style>

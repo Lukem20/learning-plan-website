@@ -19,6 +19,12 @@
 
 <style>
     main {
-        padding: 0 2.5rem;
+        padding: 0 1.5rem
+    }
+
+    @media screen and (min-width: 50em) {
+        main {
+            padding: 0 2.5rem;
+        }
     }
 </style>

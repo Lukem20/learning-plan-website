@@ -18,5 +18,10 @@
         display: flex;
         flex-direction: column;
         padding: 0 2.5rem;
+        align-items: center;
+    }
+    /* Tablet screen sizes and larger */
+    @media screen and (min-width: 50em) {
+
     }
 </style>

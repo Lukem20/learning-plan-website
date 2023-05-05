@@ -6,12 +6,15 @@
     gsap.registerPlugin('ScrollTrigger');
 
     onMount(() => {
+        /*
         tl.from('.course-title', {
             scrollTrigger: '.course-title',
             x: 400,
             rotation: 360,
             duration: 2,
+           
         })
+         */
     })
 </script>
 
@@ -19,14 +22,7 @@
 <h2>Course Descriptions</h2>
 <div class="course-list">
     <div class="course">
-        <h3 class="course-title template">Title</h3>
-        <div class="course-desc">
-            <h3 class="template">Description & Learning Outcomes</h3>
-        </div>
-    </div>
-
-    <div class="course">
-        <h4 class="course-title">CST 230 Media Tools II</h4>
+        <h3 class="course-title">CST 230 Media Tools II</h3>
         <div class="course-desc">
             <p>
                 Integrates audio, video, and animation authoring software to design, manage, 
@@ -54,7 +50,7 @@
 
     
     <div class="course">
-        <h4 class="course-title">CST 302 History of Communication Design</h4>
+        <h3 class="course-title">CST 302 History of Communication Design</h3>
         <div class="course-desc">
             <p>
                 Surveys the development of communication design in modern history, viewed in the context of 
@@ -74,7 +70,7 @@
     </div>
 
     <div class="course">
-        <h4 class="course-title">CST 304 Typograpgy</h4>
+        <h3 class="course-title">CST 304 Typograpgy</h3>
         <div class="course-desc">
             <p>
                 Typography is the art of designing letterforms, alphabets and creating compositions 
@@ -91,7 +87,7 @@
     </div>
 
     <div class="course">
-        <h4 class="course-title">CST 322 Environment Modeling</h4>
+        <h3 class="course-title">CST 322 Environment Modeling</h3>
         <div class="course-desc">
             <p>
                 The course equips students with the fundamental skills needed for the development of games. 
@@ -107,7 +103,7 @@
     </div>
 
     <div class="course">
-        <h4 class="course-title">CST 345 Visual Thinking</h4>
+        <h3 class="course-title">CST 345 Visual Thinking</h3>
         <div class="course-desc">
             <p>
                 Students use the design process to strengthen their visual intelligence and vocabulary
@@ -127,7 +123,7 @@
     </div>
 
     <div class="course">
-        <h4 class="course-title">CST 346 Human-Computer Interaction</h4>
+        <h3 class="course-title">CST 346 Human-Computer Interaction</h3>
         <div class="course-desc">
             <p>
                 Explores the fundamental concepts and design processes of the interdisciplinary field 
@@ -156,7 +152,7 @@
     
 
     <div class="course">
-        <h4 class="course-title">CST 351 Web Design</h4>
+        <h3 class="course-title">CST 351 Web Design</h3>
         <div class="course-desc">
             <p>
                 Covers web design aesthetics, layout, structure and universal design. 
@@ -177,7 +173,7 @@
     </div>
 
     <div class="course">
-        <h4 class="course-title">CST 404 Publication Design</h4>
+        <h3 class="course-title">CST 404 Publication Design</h3>
         <div class="course-desc">
             <p>
                 This project-based course uses the steps of the design process to create publications 
@@ -198,7 +194,7 @@
     </div>
 
     <div class="course">
-        <h4 class="course-title">CST 406 Graphic Identity</h4>
+        <h3 class="course-title">CST 406 Graphic Identity</h3>
         <div class="course-desc">
             <p>
                 Students experience the design process for creating a Graphic Identity system for a 
@@ -215,7 +211,7 @@
     </div>
 
     <div class="course">
-        <h4 class="course-title">CST 446 User Research & Experience Design</h4>
+        <h3 class="course-title">CST 446 User Research & Experience Design</h3>
         <div class="course-desc">
             <p>
                 Covers in-depth user research methodologies used at various stages of product design 
@@ -238,7 +234,7 @@
     </div>
     
     <div class="course">
-        <h4 class="course-title">CST 498 Communication Design Capstone</h4>
+        <h3 class="course-title">CST 498 Communication Design Capstone</h3>
         <div class="course-desc">
             <p>
                 Provides students a culminating experience via integrating knowledge and skills 
@@ -261,7 +257,7 @@
     </div>
 
     <div class="course">
-        <h4 class="course-title">CST 238 Data Structures</h4>
+        <h3 class="course-title">CST 238 Data Structures</h3>
         <div class="course-desc">
             <p>
                 Provides students skills to write clear, efficient, and high-quality code. This is an 
@@ -283,7 +279,7 @@
     </div>
 
     <div class="course">
-        <h4 class="course-title">CST 336 Internet Programming</h4>
+        <h3 class="course-title">CST 336 Internet Programming</h3>
         <div class="course-desc">
             <p>
                 Provides students with dynamic web application development skills, focusing on the integration 
@@ -304,7 +300,7 @@
     </div>
 
     <div class="course">
-        <h4 class="course-title">CST 363 Database Systems</h4>
+        <h3 class="course-title">CST 363 Database Systems</h3>
         <div class="course-desc">
             <p>
                 Database systems are a well-developed and widely-used software technology, found in everything from smartphones to web servers.  
@@ -329,33 +325,45 @@
 
 <style>
     h2 {
-        font-size: 2em;
+        text-align: center;
+        font-size: 1.5em;
         margin: 0;
     }
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         color: whitesmoke;
         margin-bottom: 0;
+        margin-top: 3rem;
+
     }
-    .course-list {
-        margin: 0 auto;
+    ul {
+        padding-left: 20px;
+        font-size: 1em;
     }
 
-    .course {
-        display: flex;
-        align-content:space-between;
-    }
 
-    .course-title {
-        width: 15%;
-        padding: 0 1rem;
-        color: whitesmoke;
+    /* Tablet screen sizes and larger */
+    @media screen and (min-width: 50em) {
+        h2 {
+            font-size: 2em;
+            margin: 0;
+        }
+        .course-list {
+            margin: 0 auto;
+        }
+        .course {
+            display: flex;
+            align-content:space-between;
+        }
+        .course-desc {
+            width: 80%;
+            padding: 0 1rem;
+            color: rgb(245, 255, 245);
+        }
+        .course-title {
+            width: 15%;
+            padding: 0 1rem;
+            color: whitesmoke;
+        }
     }
-
-    .course-desc {
-        width: 80%;
-        padding: 0 1rem;
-        color: rgb(245, 255, 245);
-    }
-
 </style>

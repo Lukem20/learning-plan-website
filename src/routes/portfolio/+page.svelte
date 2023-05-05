@@ -13,5 +13,10 @@
         display: flex;
         flex-direction: column;
         padding: 0 2.5rem;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 50em) {
+
     }
 </style>

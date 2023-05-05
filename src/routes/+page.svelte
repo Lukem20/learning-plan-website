@@ -9,7 +9,7 @@
     tl.fromTo('h1', 
       { opacity: 0 },
       { opacity: 1 });
-    gsap.from('h1', { x: 200 })
+    gsap.from('h1', { y:20 })
     tl.from('h3', { 
       opacity: 0, duration: .7 
     })
@@ -37,30 +37,47 @@
 
 <style>
   main {
-    display: flex;
-    flex-direction: column;
-    padding: 0 2.5rem;
-  }
-  h1 {
-    font-size: 4.5em;
-    margin: 0 0 10rem 0;
-    opacity: 0;
-  }
-  h2 {
-    font-size: 2em;
-    font-weight: 200;
-    margin: 0;
-  }
-  h3 {
-    font-size: 1.5em;
-    margin: 0;
-  }
-  section {
-    padding: 0 2.5rem;
-    width: 50%;
-    float: right;
-    display: flex;
-    flex-direction: column;
-  }
+      display: flex;
+      flex-direction: column;
+      padding: 0 2.5rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      opacity: 0;
+      margin-top: 0;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.5em;
+      font-weight: 200;
+      margin: 0;
+    }
 
+    section {
+      padding: 0 1rem;
+    }
+  /* Tablet screen sizes and larger */
+  @media screen and (min-width: 50em) {
+    
+    h1 {
+      font-size: 4.5em;
+      margin: 0 0 10rem 0;
+      text-align: left;
+
+    }
+    h2 {
+      font-size: 2em;
+    }
+    h3 {
+      font-size: 1.5em;
+      margin: 0;
+    }
+    section {
+      padding: 0 2.5rem;
+      width: 50%;
+      float: right;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 </style>

@@ -60,13 +60,21 @@
 
 <style>
     h2 {
-        font-size: 2em;
+        text-align: center;
+        font-size: 1.5em;
         margin: 0;
     }
-    .major-container {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding-bottom: 2.5rem;
+
+    @media screen and (min-width: 50em) {
+        h2 {
+            font-size: 2em;
+            text-align: left;
+        }
+        .major-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-bottom: 2.5rem;
+        }
     }
 </style>

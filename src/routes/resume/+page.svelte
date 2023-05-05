@@ -150,31 +150,43 @@
         padding: 0 2.5rem;
         align-items: center;
     }
-    section {
-        display: flex;
-        flex-direction: column;
-        width: 750px;
-        padding: 2rem;
+    ul {
+        padding-left: 20px;
     }
-    .flex-wrapper {
-        display: flex;
-        align-items: baseline;
-        gap: 1rem;
+
+    /* Tablet screen sizes and larger */
+    @media screen and (min-width: 50em) {
+        ul {
+            padding-left: 40px;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            width: 750px;
+            padding: 2rem;
+        }
+        .flex-wrapper {
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+        }
+        .experience .flex-wrapper {
+            justify-content: space-between;
+        }
+        button {
+            display: block;
+            margin-top: 1rem;
+        }
+        h2 {
+            font-size: 2em;
+            font-weight: 200;
+            margin: 0;
+        }
+        h3 {
+            font-size: 1.5em;
+            margin: 0;
+        }
     }
-    .experience .flex-wrapper {
-        justify-content: space-between;
-    }
-    button {
-        display: block;
-        margin-top: 1rem;
-    }
-    h2 {
-        font-size: 2em;
-        font-weight: 200;
-        margin: 0;
-    }
-    h3 {
-        font-size: 1.5em;
-        margin: 0;
-    }
+    
+
 </style>
