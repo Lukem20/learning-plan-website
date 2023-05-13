@@ -16,7 +16,7 @@
 <style>
     nav {
         display: flex;
-        flex-direction: row-reverse;
+        justify-content: space-between;
         overflow: hidden;
     }
     div {

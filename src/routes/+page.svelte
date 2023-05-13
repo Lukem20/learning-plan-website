@@ -51,10 +51,11 @@
       font-size: 1.5em;
       font-weight: 200;
       margin: 0;
+      padding-top: 1rem
     }
 
     section {
-      padding: 0 1rem;
+      padding: 6rem 2.5rem;
     }
   /* Tablet screen sizes and larger */
   @media screen and (min-width: 50em) {

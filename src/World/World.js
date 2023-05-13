@@ -1,4 +1,4 @@
-// Components\
+// Components
 import { loadBirds } from './components/Birds/birds.js';
 import { tiefighter } from './components/tiefighter.js';
 import { createCamera } from './components/camera.js';
