@@ -9,8 +9,8 @@
     <p>I appreciate good design for both digital and non-digital experiences.</p>
     <h3>Developer</h3>
     <p>I like to make websites</p>
-    <h3>Nature Nerd</h3>
-    <p>I love outdoor rock climbing, hiking, and plant ecology.</p>
+    <h3>Nature Lover</h3>
+    <p>I love outdoor rock climbing, hiking, and learning about plant ecology.</p>
 </main>
 
 <style>
