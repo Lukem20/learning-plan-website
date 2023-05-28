@@ -16,7 +16,8 @@
     h2 {
         text-align: center;
         font-size: 1.5em;
-        margin: 0;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
     }
     h3 {
         margin-top: 3rem;
@@ -25,7 +26,6 @@
     @media screen and (min-width: 50em) {
         h2 {
             font-size: 2em;
-            margin: 0;
         }
         .minor-container {
             display: flex;

@@ -65,13 +65,13 @@
     h2 {
         text-align: center;
         font-size: 1.5em;
-        margin: 0;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
     }
 
     @media screen and (min-width: 50em) {
         h2 {
             font-size: 2em;
-            text-align: left;
         }
         .major-container {
             display: flex;

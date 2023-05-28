@@ -148,9 +148,16 @@ let classes = [
     },
     { 
         title: "Graphics Programming",
-        desc: "",
+        desc: "This course provides an introduction to computer graphics with a strong emphasis on the underpinning maths. It covers the hardware and software principles used to create computer generated images: rasterization and ray tracing, 3D graphics programming in the WebGL including texturing, lighting, and shadows. The value of the mathematical foundations cannot be overstated. They are deeply connected to all rendering algorithms and their applications. The core element, geometric linear algebra, is ubiquitously applied as most topics rely on spatial construction and reasoning. This course strives to strike a balance between the theory and practice of computer graphics at its core without relying upon external frameworks. Instructor-authored basic scaffolding code and step by step guides will be provided to streamline the process.",
         outcomes: [
-            
+            "Use geometric linear algebra to define and render scene representations.",
+            "Build a ray-tracer and discuss its applications.",
+            "Use the rasterization pipeline to create real-time scenes.",
+            "Compare and contrast the rasterization pipeline w.r.t. ray tracing.",
+            "Describe the interplay between CPU and GPU in rendering pipelines.",
+            "Apply local illumination and compare it to global models.",
+            "Apply texturing, transparency, and shadows.",
+            "Describe approaches to create desired graphical experiences.",
         ]
     },
     { 
@@ -192,7 +199,8 @@ let classes = [
     h2 {
         text-align: center;
         font-size: 1.5em;
-        margin: 0;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
     }
     h3 {
         font-size: 1.25rem;
@@ -210,7 +218,6 @@ let classes = [
     @media screen and (min-width: 50em) {
         h2 {
             font-size: 2em;
-            margin: 0;
         }
         .course-list {
             margin: 0 auto;
@@ -218,6 +225,7 @@ let classes = [
         .course {
             display: flex;
             align-content:space-between;
+            padding-bottom: 2rem;
         }
         .course-desc {
             width: 80%;
