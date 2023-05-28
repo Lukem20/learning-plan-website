@@ -1,18 +1,16 @@
 <script>
     export let subheader;
     export let text;
-    export let listItem1
-    export let listItem2
-    export let listItem3
+    export let listItems
 </script>
 
 <div class="major-outcomes">
     <h3>{subheader}</h3>
     <p>{text}</p>
     <ul>
-        <li>{listItem1}</li>
-        <li>{listItem2}</li>
-        <li>{listItem3}</li>
+        {#each listItems as listItem}
+        <li>{listItem}</li>
+        {/each}
     </ul>
 </div>
 
