@@ -15,9 +15,8 @@
   
 <style>
     nav {
-        display: flex;
-        justify-content: space-between;
-        overflow: hidden;
+        display: grid;
+        grid-template-columns: fit-content(20ch) minmax(min(50vw, 30ch), 1fr);
     }
     div {
         display: flex;
@@ -27,7 +26,6 @@
     }
     a {
         position:relative;
-        /* transform: translateY(-70px); */
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
