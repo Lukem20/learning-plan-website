@@ -2,6 +2,7 @@
   import { onMount } from "svelte";
   import gsap from "gsap/dist/gsap";
   import Nav from '../components/Nav.svelte';
+  import Three from '../components/Three.svelte';
 
   const tl = gsap.timeline({ defaults: { duration: 1 } });
 
@@ -22,6 +23,7 @@
 
 <!-- Add conditional statement here that only loads the timeline prop if it's the first pageload. -->
 <Nav />
+<Three />
 <main>
   <h2 id="intro">Hello, my name is</h2>
   <h1>Luke Moore</h1>
@@ -31,7 +33,8 @@
   <p id="outro">
     Explore some of my past class work, academic background, and a brief overview of my work history. 
     This website was made with SvelteKit, Three.js, and Green Sock animation platform. My goal with this 
-    website was to learn more about the fundamentals of Svelte and get started with an animation library.
+    website was to learn more about the fundamentals of SvelteKit, get started with an animation library, 
+    and integrate 3D graphics in a website using a graphics programming library.
   </p>
 </section>
 
