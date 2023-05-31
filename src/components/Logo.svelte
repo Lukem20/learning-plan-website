@@ -9,6 +9,6 @@
         height: 100px;
         width: 100px;
         position: relative;
-        padding-left: 1rem;
+        padding-left: 2.5rem;
     }
 </style>
