@@ -39,27 +39,31 @@
 </section>
 
 <style>
-  main {
-      display: flex;
-      flex-direction: column;
-      padding: 0 2.5rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      opacity: 0;
-      margin-top: 0;
-      text-align: center;
-    }
-    h2 {
-      font-size: 1.5em;
-      font-weight: 200;
-      margin: 0;
-      padding-top: 1rem
-    }
 
-    section {
-      padding: 6rem 2.5rem;
-    }
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5rem;
+  }
+
+  h1 {
+    font-family: 'Ostrich Sans', Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    opacity: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 1rem
+  }
+
+  section {
+    padding: 6rem 2.5rem;
+  }
   /* Tablet screen sizes and larger */
   @media screen and (min-width: 50em) {
     

@@ -18,12 +18,14 @@
         display: grid;
         grid-template-columns: fit-content(20ch) minmax(min(50vw, 30ch), 1fr);
     }
+
     div {
         display: flex;
         flex-direction: row-reverse;
         gap: 2.5rem;
         padding: 2.5rem 2.8rem;
     }
+
     a {
         position:relative;
         text-decoration: none;

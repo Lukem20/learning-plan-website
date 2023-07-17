@@ -12,27 +12,49 @@
 	</body>
 
 	<style>
+		
 		@font-face {
 			font-family: 'Pathway Extreme';
 			src: url("%sveltekit.assets%/PathwayExtreme/PE-var-font.woff2");
 		}
+
+		@font-face {
+			font-family: 'Ostrich Sans';
+			src: url("%sveltekit.assets%/OstrichSans/ostrich-sans-bold.woff") format('woff');
+		}
+
+		@font-face {
+			font-family: 'Manrope';
+			src: url("%sveltekit.assets%/Manrope/Manrope-VariableFont_wght.woff") format('woff');
+		}
+
+		@font-face {
+			font-family: 'Manrope';
+			src: url("%sveltekit.assets%/Manrope/Manrope-ExtraBold.woff") format('woff');
+			font-weight: bold;
+		}
+
 		body {
 			overflow-x: hidden;
 			margin: 0;
 			color: rgb(230, 230, 230);
 			background-color: #1a1a1a;
-			font-family:'Pathway Extreme', sans-serif;
+			font-family: 'Manrope', Arial, Helvetica, sans-serif;
+		}
+
+		h1 {
+			font-family: 'Ostrich Sans', Arial, Helvetica, sans-serif;
 		}
 		
 		/* Scrollbar styles */
 		body::-webkit-scrollbar {
-			width: 0.5rem;
+			width: 0.75rem;
 		}
 		body::-webkit-scrollbar-track {
 			background: #1e1e24;
 		}
 		body::-webkit-scrollbar-thumb {
-			background: #6649b8;
+			background: #3d92b1ab;
 		}
 
 		@media screen and (prefers-reduced-motion: reduce) {  
