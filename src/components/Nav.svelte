@@ -27,27 +27,25 @@
     }
 
     a {
-        position:relative;
+        color: #9ee7ff;
+        position: relative;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
-        box-shadow: inset 0 0 0 0 #3d92b1ab;
+        box-shadow: inset 0 0 0 0 #344054;
         margin: 0 -.25rem;
         padding: 0 .25rem;
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     }
     a:link {
-        color: #f0f9ff;
-    }
-    a:visited {
-        color: #f0f9ff;
+        color: #fffff2;
     }
     a::before {
         content: '';
         position: absolute;
         width: 100%;
         height: 3px;
-        background-color: #f0f9ff;
+        background-color: #fffff2;
         bottom: 0;
         left: 0;
         transform-origin: right;
@@ -59,7 +57,8 @@
         transform: scaleX(1);
     }   
     a:hover {
-        box-shadow: inset 100px 0 0 0 #24637aab;
+        box-shadow: inset 100px 0 0 0 #2d6a81;
+        color: #fffff2;
     }
     a:active {
         color: #e1eb53;
