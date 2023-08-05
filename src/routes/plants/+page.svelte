@@ -1,46 +1,27 @@
 <script>
-    import Nav from '../../components/Nav.svelte';
-    import Observation from "../../components/Observation.svelte";
-
     const plantData = getPlantObservations();
-
     async function getPlantObservations() {
-        const res = await fetch('https://api.inaturalist.org/v1/observations?identified=true&user_id=lukemoore&iconic_taxa=Plantae&per_page=800&order=desc&order_by=created_at')
-         .catch(() => {
-            throw new Error(`HTTP Error! status: ${res.status}`);
-         });
+        const res = await fetch('https://api.inaturalist.org/v1/observations?native=true&taxon_name=Lupinus&user_id=lukemoore&quality_grade=research&order=desc&order_by=created_at');
         const plants = await res.json();
         return plants;
     }
+
 </script>
 
-<Nav />
 <main>
-    <h2>Plant observations</h2>
+    <h2>My plant observations</h2>
     <p>These observations are all research grade identifications I posted to iNaturalist, a global community of naturalists, scientists, and members of the public sharing wildlife sightings to teach one another about the natural world while creating high quality citizen science data for science and conservation.</p>
-    <div class="flex-wrapper">
-        {#await plantData}
-            Loading...
-        {:then data} 
-            {#each data.results as observation}
-                <Observation {observation} />
-            {/each}
-        {/await}
-    </div>
+    <h3>Recent Sightings</h3>
+    <h3>Highlights</h3>
+    {#await plantData}
+        Loading...
+    {:then data} 
+        {#each data.results as observation}
+            <h3>{observation.taxon.name}</h3>
+        {/each}
+    {/await}
 </main>
 
 <style>
-    main {
-        display: flex;
-        flex-direction: column;
-        padding: 0 2.5rem;
-    }
 
-    .flex-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5rem;
-        justify-content: center;
-        padding: 1rem 0;
-    }
 </style>
