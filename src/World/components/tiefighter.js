@@ -5,13 +5,13 @@ function tiefighter(scene) {
     const mtlLoader = new MTLLoader();
     let tiefighterMesh;
     //  Load material file 
-        mtlLoader.load('src/World/assets/tie-fighter/star-wars-vader-tie-fighter.mtl',
+        mtlLoader.load('/assets/tie-fighter/star-wars-vader-tie-fighter.mtl',
             (materials) => {
                 materials.preload();
                 // Load geometry
                 const objLoader = new OBJLoader();
                 objLoader.setMaterials(materials);
-                objLoader.load('src/World/assets/tie-fighter/star-wars-vader-tie-fighter.obj',
+                objLoader.load('/assets/tie-fighter/star-wars-vader-tie-fighter.obj',
                 (object) => {
                     tiefighterMesh = object;
                     tiefighterMesh.position.set(-48, 20, 0)

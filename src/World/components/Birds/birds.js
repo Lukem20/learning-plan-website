@@ -5,7 +5,7 @@ async function loadBirds() {
     const loader = new GLTFLoader();
 
     const [parrotData] = await Promise.all([
-        loader.loadAsync('src/World/assets/birds/Parrot.glb'),
+        loader.loadAsync('/assets/birds/Parrot.glb'),
     ]);
 
     const parrot = setupModel(parrotData);

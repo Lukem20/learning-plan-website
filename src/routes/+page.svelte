@@ -2,7 +2,6 @@
   import { onMount } from "svelte";
   import gsap from "gsap/dist/gsap";
   import Nav from '../components/Nav.svelte';
-  import Three from '../components/Three.svelte';
 
   const tl = gsap.timeline({ defaults: { duration: 1 } });
 
@@ -23,7 +22,6 @@
 
 <!-- Add conditional statement here that only loads the timeline prop if it's the first pageload. -->
 <Nav />
-<Three />
 <main>
   <h2 id="intro">Hello, my name is</h2>
   <h1>Luke Moore</h1>
